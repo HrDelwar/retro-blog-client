@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.nav-link {
+  @apply lg:ml-2 mb-2 lg:mb-0 hover:bg-gray-700 font-bold text-lg w-full text-center no-underline lg:w-auto lg:px-4 py-2  rounded-lg;
+}
+.btn{
+  @apply lg:ml-2 font-bold text-lg w-full no-underline text-center lg:w-auto lg:px-4 py-2 bg-gradient-to-r hover:bg-gradient-to-l rounded-lg  from-purple-600 to-pink-500;
+}
+.error-input{
+  @apply border-red-500 focus:border-red-500 focus:ring-red-500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.focus-input{
+  @apply focus:ring-indigo-500 focus:border-indigo-500 border-gray-500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-input{
+  @apply mt-1 block w-full shadow-sm sm:text-sm border p-2 focus:outline-none  rounded-md;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-label{
+  @apply block text-xl font-medium text-gray-700;
 }
-
-.App-link {
-  color: #61dafb;
+.footer-title{
+  @apply text-xl text-gray-400 font-Roboto font-medium mb-5 mt-2;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-des{
+  @apply text-gray-400 hover:text-indigo-400 block leading-7 cursor-pointer;
 }
