@@ -10,7 +10,7 @@ const SeeAllPost = () => {
   useEffect(() => {
     axios
       .get("https://young-badlands-81640.herokuapp.com/getAllPost")
-      .then((response) => setPosts(response.data))
+      .then((response) => setPosts(response.data.reverse()))
       .catch((err) => {
         console.log(err.message);
       });
@@ -26,7 +26,7 @@ const SeeAllPost = () => {
         setTimeout(() => setSuccess({ statue: null, message: "" }), 1000);
         axios
           .get("https://young-badlands-81640.herokuapp.com/getAllPost")
-          .then((response) => setPosts(response.data))
+          .then((response) => setPosts(response.data.reverse()))
           .catch((err) => {
             console.log(err.message);
           });
